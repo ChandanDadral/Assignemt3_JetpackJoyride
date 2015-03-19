@@ -1,0 +1,12 @@
+﻿#gameCanvas{
+    border: dashed 1px black;
+    border: 1px solid black;
+    margin-left: 25%;
+    align-content: center;
+}
+small {
+    margin-left: 25%;
+    font-size: small;
+    color: black;
+}
+
