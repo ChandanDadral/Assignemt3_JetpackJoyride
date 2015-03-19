@@ -30,6 +30,7 @@ module managers {
             scoreboard.score += 100;
             switch (scoreboard.score) {
                 //when player has score in thousands then player gets  a life up and different sound is played.
+               
                 case 1000:
                     createjs.Sound.play('lifeUpAudio');
                     scoreboard.lives += 1;
@@ -86,4 +87,3 @@ module managers {
     }
 
 
-}

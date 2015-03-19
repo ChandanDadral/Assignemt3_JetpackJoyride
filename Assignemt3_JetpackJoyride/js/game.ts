@@ -15,6 +15,7 @@
 /// <reference path="managers/collision.ts" />
 
 /// <reference path="states/gameplay.ts" />
+/// <reference path="states/gameoverscreen.ts" />
 
 
 
@@ -101,11 +102,7 @@ function changeState(state: number): void {
     // Launch Various "screens"
 
     switch (state) {
-        case constants.MENU_STATE:
-            // instantiate menu screen
-            currentStateFunction = states.menuState;
-            states.menu();
-            break;
+        
         case constants.PLAY_STATE:
             // instantiate play screen
             currentStateFunction = states.playState;
@@ -116,11 +113,8 @@ function changeState(state: number): void {
             // instantiate game over screen
             states.gameOver();
             break;
-        case constants.WIN_STATE:
-            // instantiate win screen
-            currentStateFunction = states.gameWinState();
-            states.gameWin();
-            break;
+        
+       
 
     }
 } 
