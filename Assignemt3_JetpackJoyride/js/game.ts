@@ -4,21 +4,17 @@
 /// <reference path="typings/soundjs/soundjs.d.ts" />
 /// <reference path="typings/preloadjs/preloadjs.d.ts" />
 
-
+/// <reference path="constants.ts" />
+/// <reference path="states/mainmenuscreen.ts" />
+/// <reference path="states/gamePlay.ts" />
+/// <reference path="states/gameoverscreen.ts" />
 /// <reference path="objects/barry.ts" />
 /// <reference path="objects/missles.ts" />
 /// <reference path="objects/background.ts" />
 /// <reference path="objects/coins.ts" />
 /// <reference path="objects/scoreboard.ts" />
-/// <reference path="objects/label.ts" />
-/// <reference path="constants.ts" />
-/// <reference path="managers/collision.ts" />
-
-/// <reference path="states/gameplay.ts" />
-/// <reference path="states/gameoverscreen.ts" />
 /// <reference path="states/winscreen.ts" />
-/// <reference path="states/mainmenuscreen.ts" />
-
+/// <reference path="objects/bullet.ts" />
 
 
 
@@ -32,19 +28,20 @@ arcade game
 var stage: createjs.Stage;
 var game: createjs.Container;
 var queue;
-var scoreboard: objects.scoreBoard;
+
 
 
 // Game Objects
 var barry: objects.Barry;
 var coins: objects.Coins;
 var background: objects.Background;
-
-
+var scoreboard: objects.scoreBoard;
+var bullet: objects.Bullet;
 
 // Missles Array
 var missles = [];
-
+//Bullets Array
+var bullets = [];
 
 
 // State variables
@@ -66,14 +63,19 @@ function preload(): void {
         { id: "explosionAudio", src: "assets/audio/Explosion.mp3" },
         { id: "mainMenu", src: "assets/audio/back.mp3" },
         { id: "hover", src: "assets/audio/hover.mp3" },
-        
+        { id: "video", src: "assets/audio/video.mp4" },
         { id: "barry", src: "assets/img/game_char.png" },
         { id: "background", src: "assets/img/background.png" },
         { id: "bullet", src: "assets/img/bullet-basic.png" },
         { id: "missles", src: "assets/img/missles.png" },
         { id: "coins", src: "assets/img/StarCoin.png" },
         { id: "gameLogo", src: "assets/img/Logo.png" },
-       
+        { id: "playButton", src: "assets/img/playButton.png" },
+        { id: "instructionsButton", src: "assets/img/instructionsButton.png" },
+        { id: "okButton", src: "assets/img/okButton.png" },
+        { id: "gameOver", src: "assets/img/gameOver.png" },
+        { id: "playAgainButton", src: "assets/img/playAgainButton.png" },
+        { id: "bullet", src: "assets/img/bull.png" }
     ]);
 }
 
@@ -124,7 +126,6 @@ function changeState(state: number): void {
             currentStateFunction = states.gameWinState();
             states.gameWin();
             break;
-       
 
     }
-} 
+}

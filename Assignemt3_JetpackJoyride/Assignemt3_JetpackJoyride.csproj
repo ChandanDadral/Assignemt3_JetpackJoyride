@@ -111,6 +111,7 @@
     <TypeScriptCompile Include="js\managers\collision.ts" />
     <TypeScriptCompile Include="js\objects\background.ts" />
     <TypeScriptCompile Include="js\objects\barry.ts" />
+    <TypeScriptCompile Include="js\objects\bullet.ts" />
     <TypeScriptCompile Include="js\objects\coins.ts" />
     <TypeScriptCompile Include="js\objects\label.ts" />
     <TypeScriptCompile Include="js\objects\missles.ts" />
