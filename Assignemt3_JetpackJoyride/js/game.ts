@@ -102,7 +102,11 @@ function changeState(state: number): void {
     // Launch Various "screens"
 
     switch (state) {
-        
+        case constants.MENU_STATE:
+            // instantiate menu screen
+            currentStateFunction = states.menuState;
+            states.menu();
+            break;
         case constants.PLAY_STATE:
             // instantiate play screen
             currentStateFunction = states.playState;
