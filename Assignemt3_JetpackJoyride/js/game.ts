@@ -9,6 +9,10 @@
 /// <reference path="objects/missles.ts" />
 /// <reference path="objects/background.ts" />
 /// <reference path="objects/coins.ts" />
+/// <reference path="objects/scoreboard.ts" />
+/// <reference path="objects/label.ts" />
+/// <reference path="constants.ts" />
+/// <reference path="managers/collision.ts" />
 
 
 
@@ -23,7 +27,7 @@ arcade game
 var stage: createjs.Stage;
 var game: createjs.Container;
 var queue;
-
+var scoreboard: objects.scoreBoard;
 
 
 // Game Objects
