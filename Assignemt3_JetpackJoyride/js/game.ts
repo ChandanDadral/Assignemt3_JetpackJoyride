@@ -30,7 +30,7 @@ var queue;
 var barry: objects.Barry;
 var coins: objects.Coins;
 var background: objects.Background;
-var scoreboard: objects.scoreBoard;
+
 
 
 // Missles Array

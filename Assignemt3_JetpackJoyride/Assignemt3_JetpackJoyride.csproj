@@ -94,6 +94,7 @@
     <Content Include="assets\img\StarCoin.png" />
     <Content Include="css\game.css" />
     <Content Include="css\reset.css" />
+    <Content Include="index.html" />
     <Content Include="js\lib\easeljs-0.8.0.min.js" />
     <Content Include="js\lib\preloadjs-0.6.0.min.js" />
     <Content Include="js\lib\soundjs-0.6.0.min.js" />
@@ -107,7 +108,9 @@
     <Folder Include="assets\fonts\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="js\constants.ts" />
     <TypeScriptCompile Include="js\game.ts" />
+    <TypeScriptCompile Include="js\managers\collision.ts" />
     <TypeScriptCompile Include="js\objects\background.ts" />
     <TypeScriptCompile Include="js\objects\barry.ts" />
     <TypeScriptCompile Include="js\objects\coins.ts" />
