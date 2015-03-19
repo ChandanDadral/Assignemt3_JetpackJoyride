@@ -24,6 +24,10 @@ module states {
             missles[count].update();
         }
 
+        //update the positions for the Bullets
+        for (var i = 0; i < bullets.length; i++) {
+            bullets[i].bulletUpdate();
+        }
        
         //check the collisions
         managers.collisionCheck();

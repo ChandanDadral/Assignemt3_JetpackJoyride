@@ -73,11 +73,13 @@
     <Content Include="assets\audio\coin_collect.mp3" />
     <Content Include="assets\audio\Explosion.mp3" />
     <Content Include="assets\audio\hover.mp3" />
+    <Content Include="assets\audio\Laser_Shoot.wav" />
     <Content Include="assets\audio\lifeUp.mp3" />
     <Content Include="assets\audio\mainMenu.mp3" />
     <Content Include="assets\audio\video.mp4" />
     <Content Include="assets\img\background.png" />
     <Content Include="assets\img\bull.png" />
+    <Content Include="assets\img\bullet-basic.png" />
     <Content Include="assets\img\coins.png" />
     <Content Include="assets\img\gameOver.png" />
     <Content Include="assets\img\game_char.png" />

@@ -80,10 +80,28 @@ module managers {
 
         for (var count = 0; count < constants.ENEMY_NUM; count++) {
             barryAndMissles(missles[count]);
-           
+            for (var i = 0; i < bullets.length; i++) {
+                bulletAndMissle(missles[count], bullets[i]);
+            }
         };
     }
-    
+    // Check collision between bullet and missles
+    export function bulletAndMissle(enemy: objects.Missle, bullet: objects.Bullet) {
+        var point1: createjs.Point = new createjs.Point();
+        var point2: createjs.Point = new createjs.Point();
+
+        point1.x = bullet.image.x;
+        point1.y = bullet.image.y;
+
+        point2.x = enemy.image.x;
+        point2.y = enemy.image.y;
+        if (distance(point1, point2) < ((bullet.height * 0.5) + (enemy.height * 0.5))) {
+            createjs.Sound.play("explosionAudio");
+            
+            enemy.reset();
+            bullet.bulletReset();
+        };
     }
 
 
+}

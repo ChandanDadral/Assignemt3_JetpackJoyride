@@ -26,7 +26,7 @@ module objects {
             this.dx = 5;
 
             this.image.addEventListener("click", function (e) {
-                // createjs.Sound.play("shootAudio");
+                 createjs.Sound.play("shoot");
                 bullet = new objects.Bullet(stage, game);
                 bullets.push(bullet);
                 bullets[bullets.length - 1].fireBullet();
