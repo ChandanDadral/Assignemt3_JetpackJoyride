@@ -14,6 +14,8 @@
 /// <reference path="constants.ts" />
 /// <reference path="managers/collision.ts" />
 
+/// <reference path="states/gameplay.ts" />
+
 
 
 

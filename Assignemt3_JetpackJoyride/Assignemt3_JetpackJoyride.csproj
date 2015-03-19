@@ -117,6 +117,7 @@
     <TypeScriptCompile Include="js\objects\label.ts" />
     <TypeScriptCompile Include="js\objects\missles.ts" />
     <TypeScriptCompile Include="js\objects\scoreBoard.ts" />
+    <TypeScriptCompile Include="js\states\gamePlay.ts" />
     <TypeScriptCompile Include="js\typings\createjs-lib\createjs-lib.d.ts" />
     <TypeScriptCompile Include="js\typings\easeljs\easeljs.d.ts" />
     <TypeScriptCompile Include="js\typings\jquery\jquery.d.ts" />

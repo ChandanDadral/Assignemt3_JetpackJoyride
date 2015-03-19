@@ -49,7 +49,8 @@ module objects {
         private _checkBounds() {
             if (this.image.x < -892) {
                 this.reset();
-                //1405
+                
+
             }
         }
 
