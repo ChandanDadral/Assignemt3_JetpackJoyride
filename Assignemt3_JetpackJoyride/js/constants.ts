@@ -9,6 +9,7 @@ module constants {
     export var PLAY_STATE: number = 1;
     export var GAME_OVER_STATE: number = 2;
     export var WIN_STATE: number = 3;
+   
     // Game Constants
     export var ENEMY_NUM: number = 7;
     export var LABEL_FONT = "30px Consolas";

@@ -47,7 +47,8 @@ module states {
             currentState = constants.GAME_OVER_STATE;
             changeState(currentState);
         }
-        //if player score reaches 7000 then player wins the game
+       
+         //if player score reaches 7000 then player wins the game
         if (scoreboard.score == 7000) {
 
             barry.destroy();

@@ -16,6 +16,8 @@
 
 /// <reference path="states/gameplay.ts" />
 /// <reference path="states/gameoverscreen.ts" />
+/// <reference path="states/winscreen.ts" />
+/// <reference path="states/mainmenuscreen.ts" />
 
 
 
@@ -117,7 +119,11 @@ function changeState(state: number): void {
             // instantiate game over screen
             states.gameOver();
             break;
-        
+        case constants.WIN_STATE:
+            // instantiate win screen
+            currentStateFunction = states.gameWinState();
+            states.gameWin();
+            break;
        
 
     }

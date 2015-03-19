@@ -78,14 +78,12 @@
     <Content Include="assets\audio\video.mp4" />
     <Content Include="assets\img\background.png" />
     <Content Include="assets\img\bull.png" />
-    <Content Include="assets\img\bullet-basic.png" />
     <Content Include="assets\img\coins.png" />
     <Content Include="assets\img\gameOver.png" />
     <Content Include="assets\img\game_char.png" />
     <Content Include="assets\img\icon.png" />
     <Content Include="assets\img\instructionsButton.png" />
     <Content Include="assets\img\Logo.png" />
-    <Content Include="assets\img\menu.png" />
     <Content Include="assets\img\missle.png" />
     <Content Include="assets\img\missles.png" />
     <Content Include="assets\img\okButton.png" />
@@ -120,6 +118,7 @@
     <TypeScriptCompile Include="js\states\gameOverScreen.ts" />
     <TypeScriptCompile Include="js\states\gamePlay.ts" />
     <TypeScriptCompile Include="js\states\mainMenuScreen.ts" />
+    <TypeScriptCompile Include="js\states\winScreen.ts" />
     <TypeScriptCompile Include="js\typings\createjs-lib\createjs-lib.d.ts" />
     <TypeScriptCompile Include="js\typings\easeljs\easeljs.d.ts" />
     <TypeScriptCompile Include="js\typings\jquery\jquery.d.ts" />
