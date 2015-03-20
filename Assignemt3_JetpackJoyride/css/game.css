@@ -10,3 +10,10 @@ small {
     color: black;
 }
 
+body {
+    
+    background: url('../assets/img/back.jpg') no-repeat fixed;
+    background-size: 1385px 670px;
+    background-repeat: no-repeat;
+
+}

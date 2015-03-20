@@ -25,6 +25,47 @@ Author: Chandan Dadral
 Purpose: This file contains initialization, preload, and state machine for the
 arcade game
 Last Modified : March 19, 2015
+Version History:
+VERSION #1.0 – MARCH 19, 2015
+	 Selected the Assets for the game and the process has been initiated. 
+VERSION #1.1 - MARCH 19, 2015
+	Added all the Objects to the Console with the accurate position.
+	Even the Background of factory is scrolling the side direction continuously.							        
+VERSION #1.2 – MARCH 19, 2015
+	Made collisions for the object by the distance between center points of the images.
+	 Added some sound effects on the object collisions.
+	Bug fixed: Background was not scrolling in the proper way changed the axis for resetting it.
+VERSION #1.3 - MARCH 19, 2015
+	Made Score board displayed on the Top of the game. 
+	Scores are updating with the proper manner. 
+	Added Labels for the game.
+	Bug fixed: Player was only moved in one direction only, now player is changing position throughout the screen.   
+VERSION #1.4 - MARCH 19, 2015
+	Created a States for the game and added Gameplay state to the game.
+VERSION #1.5 - MARCH 19, 2015
+	Added Game Over Screen to the game.
+	Game over Screen shows the Player Scores and it has the Play again button which resets the game.
+VERSION #1.6 – MARCH 19, 2015
+	     Now in this version a Main Menu Screen is added to the game. 
+	 	In this Main menu Screen the play button is displayed and the Instruction button.
+	Now user can navigate throughout the game.                                           
+VERSION #1.7 – MARCH 19, 2015
+	     Now, created a winning stage as well which shows the winning message to the User. 
+	     Sets the end point to the game, which is player has to get 7000 scores. 
+	     Bug fixed: Background was not updating in the game over screen.
+VERSION #1.8 – MARCH 19, 2015
+	     Added the Bullets object to the game. 
+	 	Now Barry can fire the bullets to game to kill the missiles.
+VERSION #1.9 – MARCH 19, 2015
+	     Made the Collisions for the Bullet Objects and Missiles. 
+	Added the Sound for the Collision of the 
+	 	Bug fixed: Fixed the Bugs for the firing the Bullets.
+VERSION #1.10 – MARCH 20, 2015
+	     Proper commenting on the code was done and defined the functionality of the each function. 
+	 	Bug fixed: No sound was played on the game over screen fixed that.
+VERSION #1.11 – MARCH 20, 2015
+	     Did some css alignment for the gameplay and added a background image
+	     Bug fixed: made the coins to comes frequent on the screen after proper interval. 
 */
 
 var stage: createjs.Stage;

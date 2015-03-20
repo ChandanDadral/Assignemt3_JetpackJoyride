@@ -71,6 +71,7 @@ module states {
     // play state Function
     export function play(): void {
         game = new createjs.Container();
+
         // Set mouse cursor to none (Barry will take place of cursor)
         stage.cursor = "none";
         background = new objects.Background(stage, game);

@@ -34,14 +34,15 @@ module objects {
 
         // Function to reset coins off screen
         _reset() {
-            this.image.x = 630;
+            this.image.x = 640 + Math.floor(Math.random() * 640);
             this.image.y = Math.floor(Math.random() * 480);
         }
 
         // Function to update position of coins.
         update() {
             this.image.x -= this.dy;
-            if (this.image.x < 0) {
+
+            if (this.image.x <= 0) {
                 this._reset();
             }
         }

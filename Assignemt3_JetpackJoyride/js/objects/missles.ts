@@ -13,6 +13,7 @@ module objects {
         width: number;
         height: number;
         dx: number;
+
         //constructor++++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;

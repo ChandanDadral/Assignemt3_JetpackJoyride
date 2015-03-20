@@ -24,8 +24,8 @@ module states {
         var finalScoreLabel: objects.Label;
         gameWinLabel = new objects.Label(300, 100, gameWinMessage);
         finalScoreLabel = new objects.Label(300, 200, finalScoreMessage);
+
         // Buttons
-        
         var playAgainButton: createjs.Bitmap;
         playAgainButton = new createjs.Bitmap(queue.getResult("playAgainButton"));
 

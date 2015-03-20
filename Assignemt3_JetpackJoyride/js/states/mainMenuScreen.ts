@@ -22,6 +22,7 @@ module states {
         var instructionsButton: createjs.Bitmap;
         var okButton: createjs.Bitmap;
 
+        //sound track for the main Menu
         var soundtrack = createjs.Sound.play("mainMenu", { loop: 2 });
         
         // Text and labels
@@ -31,7 +32,7 @@ module states {
             + "Lets See how many points you can Get!";
         var instructionsText: createjs.Text;
 
-        // initialize new objects
+        // initialize new objects for the main Menu
         game = new createjs.Container();
         gameLogo = new createjs.Bitmap(queue.getResult("gameLogo"));
         background = new objects.Background(stage, game);
@@ -43,8 +44,7 @@ module states {
        
        
 
-        // Set up where the new objects are on the canvas
-       
+        // Set up where the new objects are on the canvas 
         gameLogo.x = 110;
         gameLogo.y = 54;
         okButton.x = 284;

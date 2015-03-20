@@ -80,6 +80,7 @@
     <Content Include="assets\img\bull.png" />
     <Content Include="assets\img\bullet-basic.png" />
     <Content Include="assets\img\coins.png" />
+    <Content Include="assets\img\fb.jpg" />
     <Content Include="assets\img\gameOver.png" />
     <Content Include="assets\img\game_char.png" />
     <Content Include="assets\img\icon.png" />
@@ -91,6 +92,8 @@
     <Content Include="assets\img\playAgainButton.png" />
     <Content Include="assets\img\playButton.png" />
     <Content Include="assets\img\StarCoin.png" />
+    <Content Include="assets\img\back.jpg" />
+    <Content Include="assets\img\twitter.jpg" />
     <Content Include="css\game.css" />
     <Content Include="css\reset.css" />
     <Content Include="index.html" />

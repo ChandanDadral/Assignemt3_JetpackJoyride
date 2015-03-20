@@ -12,7 +12,7 @@ module constants {
     export var WIN_STATE: number = 3;
    
     // Game Constants
-    export var ENEMY_NUM: number = 4;
+    export var ENEMY_NUM: number = 5;
     export var LABEL_FONT = "30px Consolas";
     export var LABEL_COLOUR = "#FFFFFF";
     export var PLAYER_LIVES = 3;
