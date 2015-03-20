@@ -4,7 +4,8 @@
 /**
 File Name: winScreen.ts
 Author: Chandan Dadral
-Purpose: This file contains all of the elements of the game win screen (high score, play again)
+Purpose: This file contains all of the elements Win Screen , It shows up when Player wins 7000 Points and Gives the Winning message to the User
+Last Modified : March 19, 2015
 */
 module states {
 
@@ -29,8 +30,7 @@ module states {
         playAgainButton = new createjs.Bitmap(queue.getResult("playAgainButton"));
 
 
-        // Set up where the new objects are on the canvas
-       
+        // Set up where the new objects are on the canvas  
         playAgainButton.x = 180;
         playAgainButton.y = 394;
 
@@ -58,6 +58,7 @@ module states {
         game.addChild(gameWinLabel);
         game.addChild(finalScoreLabel);
         game.addChild(playAgainButton);
+
         // Set mouse cursor to default cursor
         stage.cursor = "default";
 

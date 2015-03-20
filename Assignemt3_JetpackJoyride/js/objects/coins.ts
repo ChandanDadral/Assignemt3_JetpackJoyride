@@ -3,6 +3,7 @@ File Name: coins.ts
 Author: Chandan Dadral
 Purpose: This class has the details of the Coins object 
 - coins are given to the player throughout the game.
+Last Modified : March 19, 2015
 */
 module objects {
     // coin Class
@@ -14,6 +15,7 @@ module objects {
         height: number;
         dy: number;
 
+        //Constructor++++++++++++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;

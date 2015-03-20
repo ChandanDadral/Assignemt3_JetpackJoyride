@@ -5,6 +5,7 @@
 File Name: scoreBoard.ts
 Author: Chandan Dadral
 Purpose: This file contains all details to initalize a Scoreboard object
+Last Modified : March 19, 2015
 */
 module objects {
     // Scoreboard class
@@ -18,7 +19,7 @@ module objects {
         score: number = 0;
         width: number;
         height: number;
-        //CONSTRUCTO++++++++++++++++++++++++++++
+        //CONSTRUCTOR++++++++++++++++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;

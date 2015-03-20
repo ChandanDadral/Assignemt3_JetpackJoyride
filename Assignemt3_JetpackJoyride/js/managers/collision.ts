@@ -6,10 +6,13 @@ File Name: collision.ts
 Author: Chandan Dadral
 Purpose: This file contains the manager for all collisions between objects like barry and Coins 
 it detect the collision and do what actions to perform.
+Last Modified : March 19, 2015
 */
 module managers {
-    // The Distance Function
-    // Checks the distance between two objects
+    /** 
+    The Distance Function
+    Checks the distance between two objects
+    */
     export function distance(p1: createjs.Point, p2: createjs.Point): number {
 
         return Math.floor(Math.sqrt(Math.pow((p2.x - p1.x), 2) + Math.pow((p2.y - p1.y), 2)));
@@ -74,12 +77,15 @@ module managers {
         }
     }
 
-    // Check all collisions
+    /*
+    This Fuction checks all the Colisions between the Objects
+    */
     export function collisionCheck() {
         barryAndCoin();
 
         for (var count = 0; count < constants.ENEMY_NUM; count++) {
             barryAndMissles(missles[count]);
+            //Checks for the Bullets and The Missle Collision
             for (var i = 0; i < bullets.length; i++) {
                 bulletAndMissle(missles[count], bullets[i]);
             }
@@ -96,8 +102,7 @@ module managers {
         point2.x = enemy.image.x;
         point2.y = enemy.image.y;
         if (distance(point1, point2) < ((bullet.height * 0.5) + (enemy.height * 0.5))) {
-            createjs.Sound.play("explosionAudio");
-            
+            createjs.Sound.play("explosionAudio");    
             enemy.reset();
             bullet.bulletReset();
         };

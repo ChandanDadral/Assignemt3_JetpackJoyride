@@ -2,6 +2,7 @@
 File Name: constants.ts
 Author: Chandan Dadral
 Purpose: This file contains all constant variables that will be used in the game
+Last Modified : March 19, 2015
 */
 module constants {
     // State Machine Constants
@@ -11,7 +12,7 @@ module constants {
     export var WIN_STATE: number = 3;
    
     // Game Constants
-    export var ENEMY_NUM: number = 7;
+    export var ENEMY_NUM: number = 4;
     export var LABEL_FONT = "30px Consolas";
     export var LABEL_COLOUR = "#FFFFFF";
     export var PLAYER_LIVES = 3;

@@ -4,6 +4,7 @@
 File Name: label.ts
 Author: Chandan Dadral
 Purpose: This file contains all details to initalize a Label object
+Last Modified : March 19, 2015
 */
 module objects {
     export class Label extends createjs.Text {

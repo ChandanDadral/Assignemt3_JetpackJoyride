@@ -2,7 +2,8 @@
 /**
 File Name: bullet.ts
 Author: Chandan Dadral
-Purpose: This file contains all details to initalize a bullet object
+Purpose: This file contains all details to initalize a bullet object and it is Fired when the click event form the Barry is Trigred
+Last Modified : March 19, 2015
 */
 module objects {
     export class Bullet {
@@ -11,7 +12,7 @@ module objects {
         game: createjs.Container;
         width: number;
         height: number;
-
+        //Constructo++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;
@@ -23,6 +24,7 @@ module objects {
 
         // Function to fire bullet. Sets where bullet will begin, and adds it to stage
         fireBullet() {
+            //Aproximately from the Player Position
             this.image.x = stage.mouseX + 5;
             this.image.y = stage.mouseY + 5;
             game.addChild(this.image);

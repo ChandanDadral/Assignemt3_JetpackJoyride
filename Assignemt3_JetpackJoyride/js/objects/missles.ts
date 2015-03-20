@@ -2,6 +2,7 @@
 File Name: missles.ts
 Author: Chandan Dadral
 Purpose: This file contains all details to initalize a missles object
+Last Modified : March 19, 2015
 */
 module objects {
     // missles Class
@@ -12,7 +13,7 @@ module objects {
         width: number;
         height: number;
         dx: number;
-        //constructor
+        //constructor++++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;
@@ -29,7 +30,7 @@ module objects {
 
         // Function to reset missles off screen
         reset() {
-            this.image.x = 1500;
+            this.image.x = 892;
             this.image.y = Math.floor(Math.random() * 480);
             this.dx = Math.floor(Math.random() * 5 + 5);
         }

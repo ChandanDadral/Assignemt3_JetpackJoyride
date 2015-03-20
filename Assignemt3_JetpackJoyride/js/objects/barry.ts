@@ -2,8 +2,8 @@
 /**
 File Name: barry.ts
 Author: Chandan Dadral
-Website Name: Plane object class for Star Savior Side-Scrolling Arcade Game
-Purpose: This file contains all details to initalize a plane object
+Purpose: This file contains all details to initalize a Barry object and it has the features so that player can fire Bullets aswell
+Last Modified : March 19, 2015
 */
 
 module objects {
@@ -15,6 +15,8 @@ module objects {
         width: number;
         height: number;
         dx: number;
+
+        //Constructor+++++++++++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;
@@ -25,8 +27,10 @@ module objects {
             this.image.regY = this.height * 0.5;
             this.dx = 5;
 
+            //Event Listner when the Bitmap is Clicked
             this.image.addEventListener("click", function (e) {
-                 createjs.Sound.play("shoot");
+                createjs.Sound.play("shoot");
+                //Creates new Bullet Object
                 bullet = new objects.Bullet(stage, game);
                 bullets.push(bullet);
                 bullets[bullets.length - 1].fireBullet();
@@ -44,7 +48,7 @@ module objects {
             this.image.y = stage.mouseY;
         }
 
-        // Function to destroy plane object.
+        // Function to destroy barry object from Canvas.
         destroy() {
             game.removeChild(this.image);
         }

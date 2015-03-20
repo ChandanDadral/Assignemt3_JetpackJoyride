@@ -2,9 +2,11 @@
 File Name: background.ts
 Author: Chandan Dadral
 Purpose: This file contains all details to initalize a background for the game
-IT is  a continous background of Labouratory.
+It is  a continous background of Labouratory.
+Last Modified : March 19, 2015
 */
 module objects {
+
     // Background  Class
     export class Background {
         image: createjs.Bitmap;
@@ -15,6 +17,7 @@ module objects {
         height: number;
         _dx: number;
 
+        //Constructor+++++++++++++++++++++
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;
@@ -45,7 +48,7 @@ module objects {
             this._checkBounds();
 
         }
-
+        // It checks for the Bounds and Resets the Background
         private _checkBounds() {
             if (this.image.x < -892) {
                 this.reset();

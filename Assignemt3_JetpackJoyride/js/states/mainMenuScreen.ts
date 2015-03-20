@@ -6,6 +6,7 @@
 File Name: mainMenuScreen.ts
 Author: Chandan Dadral
 Purpose: This file contains all of the elements of the main menu screen (start game, instructions) and the game logo
+Last Modified : March 19, 2015
 */
 module states {
     // Game Loop function, updates background
@@ -25,8 +26,8 @@ module states {
         
         // Text and labels
         var instructionsMessage: string = "In this game, barry's labortary was attacked by enemies, "
-            + "you need to avoid from the missles and save your life "
-            + "everytime you win 1000 points, then you get one more live, you need to survive. !"
+            + "you need to avoid from the missles and save barry life "
+            + "everytime you win 1000 points, then you get one more live, you need to get 7000 points. !"
             + "Lets See how many points you can Get!";
         var instructionsText: createjs.Text;
 

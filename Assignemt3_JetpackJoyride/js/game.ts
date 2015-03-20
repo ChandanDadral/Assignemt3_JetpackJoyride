@@ -8,12 +8,13 @@
 /// <reference path="states/mainmenuscreen.ts" />
 /// <reference path="states/gamePlay.ts" />
 /// <reference path="states/gameoverscreen.ts" />
+/// <reference path="states/winscreen.ts" />
+
 /// <reference path="objects/barry.ts" />
 /// <reference path="objects/missles.ts" />
 /// <reference path="objects/background.ts" />
 /// <reference path="objects/coins.ts" />
 /// <reference path="objects/scoreboard.ts" />
-/// <reference path="states/winscreen.ts" />
 /// <reference path="objects/bullet.ts" />
 
 
@@ -23,6 +24,7 @@ File Name: game.ts
 Author: Chandan Dadral
 Purpose: This file contains initialization, preload, and state machine for the
 arcade game
+Last Modified : March 19, 2015
 */
 
 var stage: createjs.Stage;
@@ -53,7 +55,7 @@ function preload(): void {
     queue = new createjs.LoadQueue();
     // Load the sound plugin
     queue.installPlugin(createjs.Sound);
-    createjs.Sound.alternateExtensions = ["mp3"];
+   
 
     queue.addEventListener("complete", init);
     queue.loadManifest([
@@ -64,7 +66,6 @@ function preload(): void {
         { id: "mainMenu", src: "assets/audio/back.mp3" },
         { id: "hover", src: "assets/audio/hover.mp3" },
         { id: "shoot", src: "assets/audio/Laser_Shoot.wav" },
-        { id: "video", src: "assets/audio/video.mp4" },
         { id: "barry", src: "assets/img/game_char.png" },
         { id: "background", src: "assets/img/background.png" },
         { id: "missles", src: "assets/img/missles.png" },

@@ -6,13 +6,15 @@
 /**
 File Name: gameOverScreen.ts
 Author: Chandan Dadral
-Purpose: This file contains all of the elements of the game over screen (high score, play again)
+Purpose: This file contains all of the elements of the game over screen 
+         It has the Buttons of play again and it shows the High Scores to the User
+Last Modified : March 19, 2015
 */
 module states {
     // variable to keep high score in
     var highScore: number = 0;
 
-    // Game loop, update lava in background
+    // Game loop, update background
     export function gameOverState() {
         background.update();
     }

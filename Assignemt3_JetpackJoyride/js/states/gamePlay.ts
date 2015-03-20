@@ -12,6 +12,7 @@
 File Name: gamePlay.ts
 Author: Chandan Dadral
 Purpose: This file contains all of the elements of the game play screen it changes the score and destorys the objects
+Last Modified : March 19, 2015
 */
 module states {
 
@@ -57,10 +58,11 @@ module states {
 
             barry.destroy();
             coins.destroy();
+            //Destroy the Enemies from the game
             for (var count = 0; count < constants.ENEMY_NUM; count++) {
                 missles[count].destroy();
             }
-
+            //Changes the State to Win State
             currentState = constants.WIN_STATE;
             changeState(currentState);
         }
@@ -75,12 +77,11 @@ module states {
         coins = new objects.Coins(stage, game);
         barry = new objects.Barry(stage, game);
 
-
-
         for (var count = 0; count < constants.ENEMY_NUM; count++) {
             missles[count] = new objects.Missle(stage, game);
         }
 
+        //Added Score boad to the Game
         scoreboard = new objects.scoreBoard(stage, game);
 
         stage.addChild(game);
